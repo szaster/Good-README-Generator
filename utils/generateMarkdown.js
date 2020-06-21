@@ -1,10 +1,22 @@
 // function to generate markdown for README
 function generateFinalMarkdown(data) {
   const markdownContent = `# ${data.title}
-  
-  ## Description
-  ${data.description}
-  `;
+
+## Description
+${data.description}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Credits
+${data.credits}
+
+## License
+${data.license}
+`;
   return markdownContent;
 }
 
