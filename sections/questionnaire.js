@@ -32,26 +32,26 @@ function collectData() {
       message: "Describe your project.",
       validate: (description) => mustNotBeEmpty(description, "Description"),
     },
-    // {
-    //   type: "editor",
-    //   name: "installation",
-    //   message:
-    //     "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. Press continue to proceed",
-    //   validate: (installation) => mustNotBeEmpty(installation, "Installation"),
-    // },
-    // {
-    //   type: "editor",
-    //   name: "usage",
-    //   message: "Provide instructions and examples for use. Include screenshots as needed.",
-    //   validate: (usage) => mustNotBeEmpty(usage, "Usage"),
-    // },
-    // {
-    //   type: "editor",
-    //   name: "credits",
-    //   message:
-    //     "List your collaborators, if any, with links to their GitHub profiles.If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.If you followed tutorials, include links to those here as well.",
-    //   validate: (credits) => mustNotBeEmpty(credits, "Credits"),
-    // },
+    {
+      type: "editor",
+      name: "installation",
+      message:
+        "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+      validate: (installation) => mustNotBeEmpty(installation, "Installation"),
+    },
+    {
+      type: "editor",
+      name: "usage",
+      message: "Provide instructions and examples for use. Include screenshots as needed.",
+      validate: (usage) => mustNotBeEmpty(usage, "Usage"),
+    },
+    {
+      type: "editor",
+      name: "credits",
+      message:
+        "List your collaborators, if any, with links to their GitHub profiles.If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.If you followed tutorials, include links to those here as well.",
+      validate: (credits) => mustNotBeEmpty(credits, "Credits"),
+    },
     {
       type: "list",
       name: "license",
@@ -62,7 +62,7 @@ function collectData() {
       type: "input",
       name: "github",
       message: "What is your GitHub username?",
-      validate: (github) => mustNotBeEmpty(github, "GitHub username"),
+      validate: (github) => mustNotBeEmpty(github, "GitHub username"),''
     },
     {
       type: "input",
