@@ -1,6 +1,7 @@
 const questionnaire = require("./sections/questionnaire");
 const readme = require("./utils/generateMarkdown");
 const fs = require("fs");
+const filename = "Readme-user.md";
 
 // array of questions for user
 const questions = [];
@@ -25,7 +26,7 @@ function init() {
     })
     .then(() => questionnaire.collectData())
     .then((data) => readme.generateMarkdown(data))
-    .then((readme) => writeToFile("Readme-generated.md", readme));
+    .then((readme) => writeToFile(filename, readme));
 }
 
 // function call to initialize program
