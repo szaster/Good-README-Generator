@@ -2,6 +2,8 @@ https://github.com/szaster/Good-README-Generator-HW9
 
 https://szaster.github.io/Good-README-Generator-HW9/
 
+Link to a screen recording: https://drive.google.com/drive/folders/1gF4l3kiCNH6DJr75xKJA1VpCkbAag9wf?usp=sharing
+
 # Quick README Generator
 
 A command-line application that allows to generate README.md quickly and easily.
