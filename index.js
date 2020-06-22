@@ -1,7 +1,7 @@
 const questionnaire = require("./sections/questionnaire");
 const readme = require("./utils/generateMarkdown");
 const fs = require("fs");
-const filename = "Readme-user.md";
+const filename = "README-user.md";
 
 // array of questions for user
 const questions = [];
