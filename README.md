@@ -1,11 +1,15 @@
+https://github.com/szaster/Good-README-Generator-HW9
+
+https://szaster.github.io/Good-README-Generator-HW9/
+
 # Quick README Generator
 
-A command-line application that allows to generate README quickly and easily.
+A command-line application that allows to generate README.md quickly and easily.
 
 ## Description
 
 This interactive command-line application processes user input to quickly generate
-a README for GitHub projects and saves user input in the README-user.md file.
+a professional README.md for GitHub projects and saves user's input in README-user.md file.
 
 ## Table of contents
 
@@ -17,8 +21,8 @@ a README for GitHub projects and saves user input in the README-user.md file.
 
 ## Installation
 
-Clone the code on your machine and install dependencies with command npm install. 
-Run the script with command node index.js in a terminal.
+Clone the code on your machine and install and import dependencies with npm install. 
+Run the application with a command node index.js in a terminal.
 
 ## Credits
 
