@@ -7,7 +7,7 @@ function mustNotBeEmpty(str, fieldName) {
   return true;
 }
 
-function collectData() {
+function welcomeScreen() {
   return inquirer.prompt([
     {
       type: "list",
@@ -15,6 +15,11 @@ function collectData() {
       message: "Welcome! This application dynamically generates a professional README.md. Press continue to proceed?",
       choices: ["Continue", "Exit"],
     },
+  ]);
+}
+
+function collectData() {
+  return inquirer.prompt([
     {
       type: "input",
       name: "title",
@@ -50,10 +55,22 @@ function collectData() {
     {
       type: "list",
       name: "license",
-      message: "Choose a license. If you need help choosing a license, use (https://choosealicense.com/)",
+      message: "Choose a licene. If you need help choosing a license, use (https://choosealicense.com/)",
       choices: ["MIT license", "GNU General Public License v3.0", "Apache License 2.0"],
+    },
+    {
+      type: "input",
+      name: "github",
+      message: "What is your GitHub username?",
+      validate: (github) => mustNotBeEmpty(github, "GitHub username"),
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?",
+      validate: (email) => mustNotBeEmpty(email, "Email address"),
     },
   ]);
 }
 
-module.exports = { collectData: collectData };
+module.exports = { collectData: collectData, welcomeScreen: welcomeScreen };

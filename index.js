@@ -9,6 +9,7 @@ const questions = [];
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) throw err;
+    process.exit(1);
     console.log("The file has been saved!");
   });
 }
@@ -16,7 +17,13 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
   questionnaire
-    .collectData()
+    .welcomeScreen()
+    .then((data) => {
+      if (data.welcome === "Exit") {
+        process.exit(0);
+      }
+    })
+    .then(() => questionnaire.collectData())
     .then((data) => readme.generateMarkdown(data))
     .then((readme) => writeToFile("Readme-generated.md", readme));
 }

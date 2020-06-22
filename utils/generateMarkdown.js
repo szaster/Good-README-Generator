@@ -16,6 +16,12 @@ ${data.credits}
 
 ## License
 ${data.license}
+
+## Questions
+
+If you any additional questions you can reach me via my [Github user profile](https://www.github.com/${data.github}).
+
+You can also [write me directly](mailto:${data.email}).
 `;
   return markdownContent;
 }
