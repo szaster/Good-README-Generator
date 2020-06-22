@@ -62,7 +62,7 @@ function collectData() {
       type: "input",
       name: "github",
       message: "What is your GitHub username?",
-      validate: (github) => mustNotBeEmpty(github, "GitHub username"),''
+      validate: (github) => mustNotBeEmpty(github, "GitHub username"),
     },
     {
       type: "input",
